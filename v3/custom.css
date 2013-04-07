@@ -28,4 +28,12 @@
 	width: 22.604166666667%; /* 217/960 */
 }
 
+/* Flexible media */
+
+img, embed, object, video {
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+
 

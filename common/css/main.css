@@ -115,19 +115,14 @@ h1{
     color: #FD1C15;
     display: block;
     float: left;
-    font-size: 25px;
+    font-size: 1.5625em;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 0.125em;
     margin: 44px 0;
 }
 .title i{
-    font-size: 32px;
+    font-size: 1.4em;
     font-style: normal;
-    float: left;
-}
-.title span{
-    float: left;
-    margin: 3px;
 }
 .message{
     background: #F3EDE1;
@@ -144,8 +139,8 @@ h1{
 }
 .header-container .nav li {
     float: left;
-    font-size: 14px;
-    margin-right: 5px;
+    font-size: 0.875em;
+    margin-right: 0.3125em;
     text-transform: uppercase;
     white-space: pre;
 }
@@ -185,7 +180,7 @@ h1{
 .picture .caption{
     background-color: #FCF8EE;
     clear: left;
-    font-size: 14px;
+    font-size: 0.875em;
     letter-spacing: 1px;
     position: absolute;
     bottom: 0;
@@ -203,7 +198,7 @@ h1{
 
 }
 .picture .caption h3{
-    font-size: 14px;
+    font-size: 100%;
     font-weight: 500;
     height: 50px;
     line-height: 50px;
@@ -235,7 +230,7 @@ h1{
    ========================================================================== */
 .footer-container{
     clear: both;
-    font-size: 14px;
+    font-size: 0.875em;
     overflow: auto;
     padding: 50px 0;
     position: relative;
