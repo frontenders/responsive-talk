@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Flexible layout
+   ========================================================================== */
+
+/* Main layout */
+.wrapper{
+	max-width: 960px;
+	width: 80%;
+}
+
+/* Header */
+.header-container .title{ width: 31.25%; float: left;} /* 300/960 */
+.header-container nav{ width: 68.75%; float: right} /* 660/960 */
+
+
+/* Pictures */
+
+.picture{
+	margin-right: 3.125%; /* 30/960 */
+}
+.picture.big{
+	width: 48.4375%; /* 465/960 */
+}
+.picture.medium{
+	width: 31.25%; /* 300/960 */
+}
+.picture.small{
+	width: 22.604166666667%; /* 217/960 */
+}
+
+

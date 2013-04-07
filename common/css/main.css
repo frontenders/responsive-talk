@@ -1,3 +1,9 @@
+/*
+ *   RESPONSIVE WEB DESIGN EXAMPLE
+ *   Author: Javier Arques
+ *   Description: Ejemplo para la presentación en el Frontenders Valencia
+ */
+
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
@@ -17,8 +23,7 @@ html{
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAMUlEQVQIHWP8//8/AzqYO6X+PwNIAhnPmVwH5AIVYxNEkYCphCkE60AXBOvAJgiSAACyHV2/D1uQfgAAAABJRU5ErkJggg==") repeat scroll right top #EAE3D4;
 }
 body {
-    font-size: 1em;
-    line-height: 1.4;
+    font: 1em/1.6 Raleway, Helvetica, Helvetica Neue, Arial;
 }
 
 ::-moz-selection {
@@ -65,10 +70,6 @@ textarea {
    Main Layout & Default Styles
    ========================================================================== */
 
-body {
-    font: 16px/26px Raleway, Helvetica, Helvetica Neue, Arial;
-}
-
 .wrapper {
     /*width: 90%;*/
     margin: 0 auto;
@@ -84,7 +85,6 @@ a:hover{
 }
 
 .header-container{
-    height: 120px;
     background: #FCF8EE;
 }
 
@@ -100,6 +100,11 @@ a:hover{
 h1, h2, h3, h4, h5{
     
     font-weight: 200;
+    line-height: 1.2;
+}
+h1{
+    color: #FD1C15;
+    font-weight: 600;
 }
 
 /* ==========================================================================
@@ -124,7 +129,7 @@ h1, h2, h3, h4, h5{
     float: left;
     margin: 3px;
 }
-.heading{
+.message{
     background: #F3EDE1;
     padding: 20px 0;
 }
@@ -161,10 +166,11 @@ h1, h2, h3, h4, h5{
     cursor: pointer;
     padding: 0 0 50px 0;
     position: relative;
+    overflow: hidden;
 }
 .picture.last{
     clear: right;
-    margin-right: 0;
+    margin-right: 0 !important;
 }
 .picture.small{
     width: 217px;
@@ -172,10 +178,10 @@ h1, h2, h3, h4, h5{
 .picture.medium{
     width: 300px;
 }
-.picture img{
+/*.picture img{
     max-width: 100%;
     height: auto;
-}
+}*/
 .picture .caption{
     background-color: #FCF8EE;
     clear: left;
@@ -230,7 +236,6 @@ h1, h2, h3, h4, h5{
 .footer-container{
     clear: both;
     font-size: 14px;
-    min-height: 170px;
     overflow: auto;
     padding: 50px 0;
     position: relative;
@@ -252,6 +257,32 @@ h1, h2, h3, h4, h5{
 .footer-container h4{
     font-weight: 600;
 }
+
+
+/* ==========================================================================
+   Page Versions
+   ========================================================================== */
+
+/* Home page */
+
+.main-container.home{
+    background: #F3EDE1;
+    text-align: center;
+}
+.main-container.home .main{
+    background: none repeat scroll 0 0 #EAE3D4;
+    margin: 7% auto;
+    max-width: 460px;
+    padding: 5%;
+    text-align: center;
+    width: 80%;
+}
+.main-container.home .main .title{
+    margin: 0 0 30px 0;
+    float: none;
+    clear: both;
+}
+
 
 /* ==========================================================================
    Helper classes
