@@ -154,12 +154,12 @@ body:after{
 		float: none;
 		display: inline;
 	}
-
 	.message{
 		text-align: center;
 	}
+	/* Grid responsive */
 	.col-2, .col-3{
-		width: 100%;
+		width: 96.875%;
 		margin-right: 0;
 	}
 	.col-4{
