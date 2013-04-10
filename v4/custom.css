@@ -20,16 +20,13 @@ img, embed, object, video {
     height: auto;
 }
 
-/* Reset widths heredados */
-
 /* ==========================================================================
    My grid
    ========================================================================== */
 
 .row{
 	margin-right: -3.125%;
-	clear: both;
-	display: block;
+	clear: both; display: block;
 }
 .col-2, .col-3, .col-4{
 	margin-right: 3.125%;
@@ -159,7 +156,7 @@ body:after{
 	}
 	/* Grid responsive */
 	.col-2, .col-3{
-		width: 96.875%;
+		width: 96.875%; /* 100% */
 		margin-right: 0;
 	}
 	.col-4{
