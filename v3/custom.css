@@ -13,19 +13,28 @@
 .header-container nav{ width: 68.75%; float: right} /* 660/960 */
 
 
-/* Pictures */
+/* ==========================================================================
+   My grid
+   ========================================================================== */
 
-.picture{
-	margin-right: 3.125%; /* 30/960 */
+.row{
+	margin-right: -3.125%;
+	clear: both;
+	display: block;
 }
-.picture.big{
-	width: 48.4375%; /* 465/960 */
+.col-2, .col-3, .col-4{
+	margin-right: 3.125%;
+	float: left;
 }
-.picture.medium{
-	width: 31.25%; /* 300/960 */
+.col-2{
+	width: 46.875%; /* 465/960 */
+	
 }
-.picture.small{
-	width: 22.604166666667%; /* 217/960 */
+.col-3{
+	width: 30.20833333333333%; /* 300/960 */
+}
+.col-4{
+	width: 21.875%; /* 217/960 */
 }
 
 /* Flexible media */

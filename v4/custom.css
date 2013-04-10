@@ -12,22 +12,6 @@
 .header-container .title{ width: 31.25%; float: left;} /* 300/960 */
 .header-container nav{ width: 68.75%; float: right} /* 660/960 */
 
-
-/* Pictures */
-
-.picture{
-	margin-right: 3.125%; /* 30/960 */
-}
-.picture.big{
-	width: 48.4375%; /* 465/960 */
-}
-.picture.medium{
-	width: 31.25%; /* 300/960 */
-}
-.picture.small{
-	width: 22.604166666667%; /* 217/960 */
-}
-
 /* Flexible media */
 
 img, embed, object, video {
@@ -36,24 +20,119 @@ img, embed, object, video {
     height: auto;
 }
 
+/* Reset widths heredados */
+
+/* ==========================================================================
+   My grid
+   ========================================================================== */
+
+.row{
+	margin-right: -3.125%;
+	clear: both;
+	display: block;
+}
+.col-2, .col-3, .col-4{
+	margin-right: 3.125%;
+	float: left;
+}
+.col-2{
+	width: 46.875%; /* 465/960 */
+}
+.col-3{
+	width: 30.20833333333333%; /* 300/960 */
+}
+.col-4{
+	width: 21.875%; /* 217/960 */
+}
+
 /* ==========================================================================
    Media queries
    ========================================================================== */
+/* Debug viewport */
+body:after{
+	background: #93AE60;
+	border-radius: 6px;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: 100;
+	opacity: 0.8;
+	padding: 4px 8px;
+	position: fixed;
+	right: 8px;
+	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+	top: 8px;
+}
+/* Large desktop */ 
+@media (min-width: 1200px) {
+	body:after{	
+		content: "☷ > 1200px";
+	}
+	body{
+		font-size: 110%;
+	}
+}
+
+/* Desktop*/
+
+@media (min-width: 980px) and (max-width: 1199px) {
+	body:after{
+		content: "☷ < 1200px";
+	}
+}
+
+/* Portrait tablet to landscape and desktop */ 
+@media (min-width: 770px) and (max-width: 979px) {
+	body:after{
+		content: "☷ < 770px";
+	}
+}
+
+/* Landscape phone to portrait tablet */ 
+@media (max-width: 769px) {
+	body:after{
+		content: "☷ < 769px";
+	}
+	body{
+		font-size: 90%;
+	}	
+	/* Pictures */
+	.picture{
+		padding-bottom: 80px;
+	}
+	.picture:hover .caption{
+		height: 55px;
+		opacity: 1;
+
+		-webkit-transition: none;
+		-moz-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+	.picture .caption{
+		line-height: 120%;
+		height: 55px;
+	}
+	.picture .caption h3,
+	.picture .caption p{
+		line-height: 120%;
+		height: auto;
+	}
+	.picture .caption h3{
+		margin-bottom: 0.5em;
+	}
+	.col-4{
+		/*width: 46.875%; /* 50% */*/
+	}
+
+
+}
 
 /* Landscape phones and down */
 
+@media only screen and (max-width: 481px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
 
-@media (max-width: 479px) {
-
-	body{
-		font-size: 80%;
-	}
 	body:after{
-		color: #FFF;background: red;border-radius: 6px;padding: 0 6px;font-size: 11px;
-		content: "<480px";
-		left: 2em;
-		position: fixed;
-		top: 1em;
+		content: "☷ < 481px";
 	}
 	/* Header */
 	.header-container .title{
@@ -84,70 +163,14 @@ img, embed, object, video {
 	.message{
 		text-align: center;
 	}
-	.picture.big, .picture.medium{
+	.col-2, .col-3{
 		width: 100%;
 		margin-right: 0;
 	}
-	.picture.medium img{
-		width: 100%;
-	}
-	.picture.small{
-		width: 48.4375%; /* 465/960 */
-	}
-} 
-
-/* Landscape phone to portrait tablet */ 
-@media (min-width: 480px) and (max-width: 767px) {
-	body:after{
-		color: #FFF;background: red;border-radius: 6px;padding: 0 6px;font-size: 11px;
-		content: "<767px";
-		left: 2em;
-		position: fixed;
-		top: 1em;
-	}
-	body{
-		font-size: 90%;
+	.col-4{
+		width: 46.875%; /* 50% */
 	}
 
-} 
-
-/* Portrait tablet to landscape and desktop */ 
-@media (min-width: 768px) and (max-width: 979px) {
-	body:after{
-		color: #FFF;background: red;border-radius: 6px;padding: 0 6px;font-size: 11px;
-		content: "<979px";
-		left: 2em;
-		position: fixed;
-		top: 1em;
-	}
-
-
-}
-
-/* Desktop*/
-
-@media (min-width: 980px) and (max-width: 1199px) {
-	body:after{
-		color: #FFF;background: red;border-radius: 6px;padding: 0 6px;font-size: 11px;
-		content: "<1200px";
-		left: 2em;
-		position: fixed;
-		top: 1em;
-	}
-}
-
-/* Large desktop */ 
-@media (min-width: 1200px) {
-	body:after{
-		color: #FFF;background: red;border-radius: 6px;padding: 0 6px;font-size: 11px;
-		content: ">1200px";
-		left: 2em;
-		position: fixed;
-		top: 1em;
-	}
-	body{
-		font-size: 120%;
-	}
 }
 
 

@@ -126,7 +126,7 @@ h1{
 }
 .message{
     background: #F3EDE1;
-    padding: 20px 0;
+    padding: 1em 0;
 }
 
 .header-container .nav {
@@ -155,32 +155,26 @@ h1{
     background-color: #FCF8EE;
     color: black;
     float: left;
-    margin: 30px 30px 0 0;
     position: relative;
-    width: 465px;
+    margin-top: 30px;
     cursor: pointer;
     padding: 0 0 50px 0;
     position: relative;
     overflow: hidden;
+
+  -webkit-transition: box-shadow 0.2s ease-in;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: box-shadow 0.2s ease-in;  /* Firefox 4-15 */
+       -o-transition: box-shadow 0.2s ease-in;  /* Opera 10.50–12.00 */
+          transition: box-shadow 0.2s ease-in;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 }
 .picture.last{
     clear: right;
     margin-right: 0 !important;
 }
-.picture.small{
-    width: 217px;
-}
-.picture.medium{
-    width: 300px;
-}
-/*.picture img{
-    max-width: 100%;
-    height: auto;
-}*/
+
 .picture .caption{
     background-color: #FCF8EE;
     clear: left;
-    font-size: 0.875em;
     letter-spacing: 1px;
     position: absolute;
     bottom: 0;
@@ -191,39 +185,59 @@ h1{
     overflow: hidden;
     text-align: center;
 
-  -webkit-transition: all 0.1s ease-in;  /* Chrome 1-25, Safari 3.2+ */
-     -moz-transition: all 0.1s ease-in;  /* Firefox 4-15 */
-       -o-transition: all 0.1s ease-in;  /* Opera 10.50–12.00 */
-          transition: all 0.1s ease-in;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+  -webkit-transition: all 0.2s ease-in;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.2s ease-in;  /* Firefox 4-15 */
+       -o-transition: all 0.2s ease-in;  /* Opera 10.50–12.00 */
+          transition: all 0.2s ease-in;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 
 }
 .picture .caption h3{
-    font-size: 100%;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.8125em;
     font-weight: 500;
     height: 50px;
     line-height: 50px;
-    margin: 0;
-    padding: 0;
     text-transform: uppercase;
+    
 }
 .picture .caption p{
+    width: 80%;
+    margin: 0 auto;
     color: #FD1B13;
     line-height: 50px;
-    margin: 0;
-    padding: 0;
+    font-size: 0.75em;
     text-transform: uppercase;
+}
+
+.picture:hover{
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
+       -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
+
+  -webkit-transition: box-shadow 0.2s ease-in;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: box-shadow 0.2s ease-in;  /* Firefox 4-15 */
+       -o-transition: box-shadow 0.2s ease-in;  /* Opera 10.50–12.00 */
+          transition: box-shadow 0.2s ease-in;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 }
 
 .picture:hover .caption{
     height: 100px;
     opacity: 0.8;
 
-  -webkit-transition: all 0.1s ease-in;  /* Chrome 1-25, Safari 3.2+ */
-     -moz-transition: all 0.1s ease-in;  /* Firefox 4-15 */
-       -o-transition: all 0.1s ease-in;  /* Opera 10.50–12.00 */
-          transition: all 0.1s ease-in;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+  -webkit-transition: all 0.2s ease-in;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.2s ease-in;  /* Firefox 4-15 */
+       -o-transition: all 0.2s ease-in;  /* Opera 10.50–12.00 */
+          transition: all 0.2s ease-in;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 
 }
+.picture.medium{
+    font-size: 95%;
+}
+.picture.small{
+    font-size: 85%;
+}
+
 
 /* ==========================================================================
    Footer
@@ -237,14 +251,14 @@ h1{
 }
 
 .footer-container footer {
-    padding: 20px 0;
+    padding: 1.125em 0;
     text-align: center;
 }
 
 .footer-container h2{
     color: #FD1C15;
     display: block;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: bold;
     letter-spacing: 2px;
 

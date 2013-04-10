@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>2 - Flexible Layouts</title>
+        <title>4 - Media queries</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -40,74 +40,78 @@
 
         <div class="main-container">
             <div class="main wrapper clearfix">
-                
-                <figure class="big picture first">
-                    <img src="../common/img/b/arrozales.jpg" alt="" title="">
-                    <figcaption class="caption">
-                            <h3>Terrazas de Arroz de Longji</h3>
-                            <p>CHINA</p>
-                    </figcaption>
-                </figure>
-                <figure class="big picture last">
-                    <img src="../common/img/b/atenas.jpg" alt="" title="">
-                    <figcaption class="caption">
-                        <h3>Acrópolis de Atenas</h3>
-                        <p>Grecia</p>
-                    </figcaption>
-                </figure>
-                
+                <div class="row">
+                    <figure class="big picture col-2">
+                        <img src="../common/img/b/arrozales.jpg" alt="" title="">
+                        <figcaption class="caption">
+                                <h3>Terrazas de Arroz de Longji</h3>
+                                <p>CHINA</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="big picture col-2">
+                        <img src="../common/img/b/atenas.jpg" alt="" title="">
+                        <figcaption class="caption">
+                            <h3>Acrópolis de Atenas</h3>
+                            <p>Grecia</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
 
-                <figure class="medium picture">
-                    <img src="../common/img/m/salvador.jpg" alt="" title="">
-                    <figcaption class="caption">
-                        <h3>Salvador de Bahía</h3>
-                        <p>Brasil</p>
-                    </figcaption>
-                </figure>
-                <figure class="medium picture">
-                    <img src="../common/img/m/shanghai.jpg" alt="" title="">
-                    <figcaption class="caption">
-                        <h3>Skyline de Shanghai</h3>
-                        <p>China</p>
-                    </figcaption>
-                </figure>
-                <figure class="medium picture last">
-                    <img src="../common/img/m/angkor.jpg" alt="" title="">
-                    <figcaption class="caption">
-                        <h3>Angkor Wat</h3>
-                        <p>Camboya</p>
-                    </figcaption>
-                </figure>
+                <div class="row">
+                    <figure class="medium picture col-3">
+                        <img src="../common/img/m/salvador.jpg" alt="" title="">
+                        <figcaption class="caption">
+                            <h3>Salvador de Bahía</h3>
+                            <p>Brasil</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="medium picture col-3">
+                        <img src="../common/img/m/shanghai.jpg" alt="" title="">
+                        <figcaption class="caption">
+                            <h3>Skyline de Shanghai</h3>
+                            <p>China</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="medium picture col-3">
+                        <img src="../common/img/m/angkor.jpg" alt="" title="">
+                        <figcaption class="caption">
+                            <h3>Angkor Wat</h3>
+                            <p>Camboya</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-                <figure class="small picture">
-                    <img src="../common/img/s/xian.jpg" alt="" title="">
-                    <figcaption class="caption">
-                        <h3>Guerreros de Xian</h3>
-                        <p>China</p>
-                    </figcaption>
-                </figure>
-                <figure class="small picture">
-                    <img src="../common/img/s/marrakesch.jpg" alt="" title="">
-                    <figcaption class="caption">
-                        <h3>Aït Benhaddou</h3>
-                        <p>Marruecos</p>
-                    </figcaption>
-                </figure>
-                <figure class="small picture">
-                    <img src="../common/img/s/benares.jpg" alt="" title="">
-                    <figcaption class="caption">
-                        <h3>Benarés</h3>
-                        <p>India</p>
-                    </figcaption>
-                </figure>                                
-                <figure class="small picture last">
-                    <img src="../common/img/s/tailandia.jpg" alt="" title="">
-                    <figcaption class="caption">
-                        <h3>Bahía de Phang Nga</h3>
-                        <p>Tailandia</p>
-                    </figcaption>
-                </figure>                
+                <div class="row">
+                    <figure class="small picture col-4">
+                        <img src="../common/img/s/xian.jpg" alt="" title="">
+                        <figcaption class="caption">
+                            <h3>Xian</h3>
+                            <p>China</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="small picture col-4">
+                        <img src="../common/img/s/marrakesch.jpg" alt="" title="">
+                        <figcaption class="caption">
+                            <h3>Aït Benhaddou</h3>
+                            <p>Marruecos</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="small picture col-4">
+                        <img src="../common/img/s/benares.jpg" alt="" title="">
+                        <figcaption class="caption">
+                            <h3>Benarés</h3>
+                            <p>India</p>
+                        </figcaption>
+                    </figure>                                
+                    <figure class="small picture col-4">
+                        <img src="../common/img/s/tailandia.jpg" alt="" title="">
+                        <figcaption class="caption">
+                            <h3>Phang Nga Bay</h3>
+                            <p>Tailandia</p>
+                        </figcaption>
+                    </figure>  
+                </div>             
 
 
 
