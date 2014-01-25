@@ -8,6 +8,7 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 *{
+    -moz-box-sizing:border-box;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
@@ -64,6 +65,70 @@ textarea {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+ul, ol, li{
+    list-style: none;
+}
+
+/* 
+   Home Ordered Numbered list
+   ========================================================================== */
+
+ol{
+    counter-reset: my-count;
+    width: 160px;
+    margin: 0 auto 1em auto;
+    padding: 0; 
+}
+ol li{
+    text-align: justify;
+    margin: .5em 0;
+}
+ol li:before{
+    content: 'v' counter(my-count);
+    counter-increment: my-count;
+    height: 24px;
+    width: 24px;
+    margin-right: 0.6em;
+    line-height: 24px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    font-size: .8em;
+    color: #FFF;
+    background: #FD1C15;
+    border-radius: 50%;
+}
+
+ol li:hover:before{
+    -webkit-animation: bounce 200ms;
+    animation: bounce 200ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes bounce{
+    0%{
+        -webkit-transform: translate(0, 0);
+    }
+    50%{
+        -webkit-transform: translate(0, -15px);
+    }
+    100%{
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@keyframes bounce{
+    0%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(0, -15bpx);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
 }
 
 /* ==========================================================================
@@ -162,9 +227,7 @@ h1{
     position: relative;
     overflow: hidden;
 
-  -webkit-transition: box-shadow 0.2s ease-in;  /* Chrome 1-25, Safari 3.2+ */
-     -moz-transition: box-shadow 0.2s ease-in;  /* Firefox 4-15 */
-       -o-transition: box-shadow 0.2s ease-in;  /* Opera 10.50–12.00 */
+  -webkit-transition: box-shadow 0.2s ease-in;  /* Opera 10.50–12.00 */
           transition: box-shadow 0.2s ease-in;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 }
 .picture.last{
@@ -185,9 +248,7 @@ h1{
     overflow: hidden;
     text-align: center;
 
-  -webkit-transition: all 0.2s ease-in;  /* Chrome 1-25, Safari 3.2+ */
-     -moz-transition: all 0.2s ease-in;  /* Firefox 4-15 */
-       -o-transition: all 0.2s ease-in;  /* Opera 10.50–12.00 */
+  -webkit-transition: all 0.2s ease-in;  /* Opera 10.50–12.00 */
           transition: all 0.2s ease-in;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 
 }
@@ -211,13 +272,9 @@ h1{
 }
 
 .picture:hover{
-    -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
-       -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
             box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
 
-  -webkit-transition: box-shadow 0.2s ease-in;  /* Chrome 1-25, Safari 3.2+ */
-     -moz-transition: box-shadow 0.2s ease-in;  /* Firefox 4-15 */
-       -o-transition: box-shadow 0.2s ease-in;  /* Opera 10.50–12.00 */
+  -webkit-transition: box-shadow 0.2s ease-in;  /* Opera 10.50–12.00 */
           transition: box-shadow 0.2s ease-in;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 }
 
@@ -225,9 +282,7 @@ h1{
     height: 100px;
     opacity: 0.8;
 
-  -webkit-transition: all 0.2s ease-in;  /* Chrome 1-25, Safari 3.2+ */
-     -moz-transition: all 0.2s ease-in;  /* Firefox 4-15 */
-       -o-transition: all 0.2s ease-in;  /* Opera 10.50–12.00 */
+  -webkit-transition: all 0.2s ease-in;  /* Opera 10.50–12.00 */
           transition: all 0.2s ease-in;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
 
 }
@@ -279,15 +334,15 @@ h1{
     text-align: center;
 }
 .main-container.home .main{
-    background: none repeat scroll 0 0 #EAE3D4;
+    background-color: #FCF8EE;
     margin: 7% auto;
     max-width: 27em;
     padding: 2em;
     text-align: center;
-    width: 80%;
+    width: 85%;
 }
 .main-container.home .main .title{
-    margin: 1em 0;
+    margin: 0 0 1em 0;
     float: none;
     clear: both;
 }
@@ -296,6 +351,10 @@ h1{
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.center{
+    text-align: center;
+}
 .strips{
     clear: both;
     display: block;
